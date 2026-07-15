@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  min-height: 100vh;
+}
+
+h1 {
+  color: white;
+  padding: 20px 0;
+}
+
+::selection {
+  background: #79a6ff;
+  color: white;
+}
+
+button {
+  cursor: pointer;
+}
