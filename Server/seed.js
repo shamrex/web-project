@@ -15,7 +15,7 @@ const scholarships = [
   { name: "PEEF Scholarship", country: "Pakistan", type: "Need-based", levels: ["intermediate","bachelors"], fields: ["any"], maxIncomeLevel: "low", minGPA: 45, deadline: "2026-08-31", link: "https://www.peef.org.pk/" }
 ]
 
-mongoose.connect('mongodb://localhost:27017/scholarshipfinder')
+mongoose.connect('mongodb://shamrex088_db_user:jJVtXo9ev8nkIMdg@ac-s87cbim-shard-00-00.rbyt71f.mongodb.net:27017,ac-s87cbim-shard-00-01.rbyt71f.mongodb.net:27017,ac-s87cbim-shard-00-02.rbyt71f.mongodb.net:27017/scholarshipfinder?ssl=true&replicaSet=atlas-813qpl-shard-0&authSource=admin')
   .then(async () => {
     console.log('Connected to MongoDB')
     await Scholarship.deleteMany()
