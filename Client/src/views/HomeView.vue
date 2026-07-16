@@ -37,8 +37,7 @@ async function handleSearch(userDetails) {
   closestMatches.value = []
 
   // Fetch scholarships from Express API instead of local JSON
-const { data: scholarships } = await axios.get('http://localhost:5000/api/scholarships')
-
+const { data: scholarships } = await axios.get(`${import.meta.env.VITE_API_URL}/api/scholarships`)
   const eligibleLevel = nextLevelMap[userDetails.educationLevel]  
   const gpaPercentage = (userDetails.gpa / 4) * 100
 
